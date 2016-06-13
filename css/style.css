@@ -1,5 +1,66 @@
-.button {
+.button, .button-primary, .button-small {
   color: #666666; }
 
 .important {
   color: #666666; }
+
+#header nav {
+  /* Rules for the nav area */ }
+
+#header ul {
+  /* Rules for the menu */ }
+
+#header li {
+  /* Rules for list items */ }
+
+#header a {
+  /* Rules for links */ }
+
+.button, .button-primary, .button-small {
+  display: inline-block;
+  color: #000;
+  background: #333;
+  border-radius: 4px;
+  padding: 8px 11px; }
+
+.button-primary {
+  background: #0091C2; }
+
+.button-small {
+  font-size: 0.9em;
+  padding: 3px 8px; }
+
+a {
+  -webkit-transition: background-color 200ms;
+  -moz-transition: background-color 200ms;
+  -o-transition: background-color 200ms;
+  transition: background-color 200ms; }
+
+.button, .button-primary, .button-small {
+  -webkit-transition: background-color 200ms;
+  -moz-transition: background-color 200ms;
+  -o-transition: background-color 200ms;
+  transition: background-color 200ms; }
+
+a {
+  -webkit-transition: background-color 200ms;
+  -moz-transition: background-color 200ms;
+  -o-transition: background-color 200ms;
+  transition: background-color 200ms; }
+
+.button, .button-primary, .button-small {
+  -webkit-transition: background-color 300ms;
+  -moz-transition: background-color 300ms;
+  -o-transition: background-color 300ms;
+  transition: background-color 300ms; }
+
+.container {
+  width: 100%; }
+
+article {
+  float: left;
+  width: 62.5%; }
+
+aside {
+  float: right;
+  width: 31.25%; }

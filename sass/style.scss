@@ -9,3 +9,92 @@ $primary_color: #666666;
 .important {
     color: $primary_color;
 }
+
+// Nesting
+
+#header {
+    nav {
+        /* Rules for the nav area */
+    }
+
+    ul {
+        /* Rules for the menu */
+    }
+
+    li {
+        /* Rules for list items */
+    }
+
+    a {
+        /* Rules for links */
+    }
+}
+
+// Extending Rulesets
+
+.button {
+    display: inline-block;
+    color: #000;
+    background: #333;
+    border-radius:4px;
+    padding:8px 11px;
+}
+
+.button-primary {
+    @extend .button;
+    background: #0091C2
+}
+
+.button-small {
+    @extend .button;
+    font-size:0.9em;
+    padding:3px 8px;
+}
+
+// Mixins
+
+@mixin hover-effect {
+    -webkit-transition: background-color 200ms;
+    -moz-transition: background-color 200ms;
+    -o-transition: background-color 200ms;
+    transition: background-color 200ms;
+}
+
+a {
+    @include hover-effect;
+}
+
+.button {
+    @include hover-effect;
+}
+
+// or
+
+@mixin hover-effect( $speed ) {
+    -webkit-transition: background-color $speed;
+    -moz-transition: background-color $speed;
+    -o-transition: background-color $speed;
+    transition: background-color $speed;
+}
+
+a {
+    @include hover-effect(200ms);
+}
+
+.button {
+    @include hover-effect(300ms);
+}
+
+// Operations
+
+.container { width: 100%; }
+
+article {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+
+aside {
+  float: right;
+  width: 300px / 960px * 100%;
+}
