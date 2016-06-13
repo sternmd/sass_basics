@@ -1,0 +1,23 @@
+{
+  "name": "sass_basics",
+  "version": "1.0.0",
+  "description": "Digging into Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sternmd/sass_basics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sternmd/sass_basics/issues"
+  },
+  "homepage": "https://github.com/sternmd/sass_basics#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
+  }
+}
